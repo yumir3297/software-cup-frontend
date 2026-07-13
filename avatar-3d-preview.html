@@ -15,6 +15,9 @@
     color: #94a3b8; font-size: 14px; font-family: sans-serif;
   }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}</style>
 </head>
 <body>
 <div class="loading" id="loading">3D 数字人加载中...</div>
@@ -100,7 +103,7 @@ let nextBlink = 2;
 let blinkTimeout;
 
 try {
-  const modelUrl = 'http://localhost:5173/models/hanfu.vrm';
+  const modelUrl = 'models/hanfu.vrm';
   loadingEl.textContent = '正在下载数字人模型...';
   
   const gltf = await loader.loadAsync(modelUrl);

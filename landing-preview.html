@@ -8,22 +8,22 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg:       #0b0b0f;
+    --bg:       #1a1612;
     --surface:  rgba(255,255,255,0.03);
-    --border:   rgba(255,255,255,0.06);
+    --border:   rgba(255,250,242,0.07);
     --text:     #f0f2f5;
     --muted:    rgba(255,255,255,0.25);
     --muted-hv: rgba(255,255,255,0.65);
-    --accent:   #3b82f6;
-    --accent-bg:rgba(59,130,246,0.1);
-    --accent-bd:rgba(59,130,246,0.18);
+    --accent:   #248550;
+    --accent-bg:rgba(36,133,80,0.12);
+    --accent-bd:rgba(36,133,80,0.18);
   }
 
   html, body {
     height: 100%;
     background: var(--bg);
     color: var(--text);
-    font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", ui-sans-serif, sans-serif;
     overflow: hidden;
   }
 
@@ -262,6 +262,9 @@
     }
   }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}</style>
 </head>
 <body>
 
@@ -270,33 +273,33 @@
   <div class="visual">
     <div class="img-stack">
       <img
-        src="http://localhost:5173/assets/slides/test-image.jpg"
+        src="assets/test-image.jpg"
         alt="测试图片"
         class="active"
         data-id="buddha"
       />
       <img
-        src="http://localhost:5173/assets/slides/灵山梵宫.png"
+        src="assets/灵山梵宫.png"
         alt="灵山梵宫"
         data-id="palace"
       />
       <img
-        src="http://localhost:5173/assets/slides/九龙灌浴.png"
+        src="assets/九龙灌浴.png"
         alt="九龙灌浴"
         data-id="dragon"
       />
       <img
-        src="http://localhost:5173/assets/slides/五智门.png"
+        src="assets/五智门.png"
         alt="五智门"
         data-id="gate"
       />
       <img
-        src="http://localhost:5173/assets/slides/菩提大道.png"
+        src="assets/菩提大道.png"
         alt="菩提大道"
         data-id="bodhi"
       />
       <img
-        src="http://localhost:5173/assets/slides/香月花街.png"
+        src="assets/香月花街.png"
         alt="香月花街"
         data-id="street"
       />
